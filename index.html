@@ -228,19 +228,18 @@
     </script>
 
     <script>
-    let lastScroll = 0;
     const navbar = document.querySelector('.navbar');
+    const valuesSection = document.querySelector('.values-section');
 
     window.addEventListener('scroll', () => {
-        const currentScroll = window.scrollY;
-        if (currentScroll > lastScroll && currentScroll > 80) {
+        const valuesTop = valuesSection.getBoundingClientRect().top;
+        if (valuesTop <= 80) {
             navbar.style.transform = 'translateY(-100%)';
         } else {
             navbar.style.transform = 'translateY(0)';
         }
-        lastScroll = currentScroll;
     });
-</script>
+    </script>
     
 <!-- FOOTER -->
 <footer class="footer">
