@@ -204,6 +204,16 @@
     </script>
 
     <script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            preloader.classList.add('hidden');
+            setTimeout(() => preloader.style.display = 'none', 500);
+        }, 3000);
+    });
+    </script>  
+    
+    <script>
     // 1. Disable Right-Click
     document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
