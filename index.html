@@ -206,14 +206,22 @@
     </script>
 
     <script>
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     window.addEventListener('load', () => {
         setTimeout(() => {
             const preloader = document.getElementById('preloader');
             preloader.classList.add('hidden');
-            setTimeout(() => preloader.style.display = 'none', 500);
-        }, 3000);
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                window.scrollTo(0, 0);
+            }, 500);
+        }, 700);
     });
-    </script>  
+    </script>   
     
     <script>
     // 1. Disable Right-Click
