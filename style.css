@@ -8,6 +8,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -15,6 +17,7 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
