@@ -510,6 +510,7 @@ input, textarea {
     background-color: #e8e8e8;
     font-family: inherit;
     font-size: 0.9rem;
+    resize: vertical;
 }
 
 .send-btn {
