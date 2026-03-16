@@ -126,7 +126,7 @@ input, textarea {
     display: flex;
     align-items: center;
     padding: 0 8%;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-bg.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
