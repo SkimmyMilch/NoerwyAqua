@@ -520,10 +520,11 @@ input, textarea {
     padding: 14px 45px;
     border-radius: 6px;
     cursor: pointer;
-    float: right;
     font-weight: 800;
     transition: 0.3s;
     pointer-events: auto !important;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .send-btn:hover {
@@ -543,12 +544,15 @@ input, textarea {
 
 .form-success, .form-error {
     display: none;
-    padding: 15px 20px;
+    padding: 14px 20px;
     border-radius: 6px;
-    margin-top: 15px;
     font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
+    height: 50px;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-success {
@@ -561,6 +565,18 @@ input, textarea {
     background-color: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.form-messages {
+    flex: 1;
 }
 
 /* --- KAWUNG PATTERN --- */
