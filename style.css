@@ -541,6 +541,16 @@ input, textarea {
     display: block;
 }
 
+.form-success {
+    display: none;
+    background-color: #1d4a6e;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
 /* --- KAWUNG PATTERN --- */
 .pattern {
     position: absolute;
